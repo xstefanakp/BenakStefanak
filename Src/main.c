@@ -34,11 +34,13 @@ int main(void)
   GPIOA_C;
   /*GPIOB pin 3 and 6 setup*/
   /*GPIO MODER register*/
+
   //Set mode for pin 3
-  *((volatile uint32_t *)((uint32_t)0x48000400)) &= ~(uint32_t)(0x3 << 6);
-    *((volatile uint32_t *)((uint32_t)0x48000400)) |= (uint32_t)(1 << 6);
-    //Set mode for pin 6
-    *((volatile uint32_t *)((uint32_t)0x48000400)) &= ~(uint32_t)(0x3 << 12);
+  *((volatile uint32_t *)((uint32_t)0x48000000)) &= ~(uint32_t)(0x3 << 6);
+
+    //Set mode for pin 4
+    *((volatile uint32_t *)((uint32_t)0x48000000)) &= ~(uint32_t)(0x3 << 8);
+    *((volatile uint32_t *)((uint32_t)0x48000000)) |= (uint32_t)(1 << 8);
 
     /*GPIO OTYPER register*/
     *((volatile uint32_t *)((uint32_t)(0x48000400 + 0x04U))) &= ~(1 << 3);

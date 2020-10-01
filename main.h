@@ -18,8 +18,8 @@
   ******************************************************************************
   */
 /* USER CODE END Header */
+
 /* Define to prevent recursive inclusion -------------------------------------*/
-/*skuska
 #ifndef __MAIN_H
 #define __MAIN_H
 
@@ -44,7 +44,7 @@ extern "C" {
 
 //GPIOA peripheral base address
 #define	GPIOA_BASE_ADDR			(uint32_t)(0x48000000U)
-//peter stafanak
+
 //GPIOB peripheral base address
 #define	GPIOB_BASE_ADDR			(uint32_t)(0x48000400U)
 //MODER register
@@ -72,15 +72,12 @@ extern "C" {
 #define LED_ON					*((volatile uint32_t *)((uint32_t)(0x48000400 + 0x18U))) |= (1 << 3)   	//GPIOB pin 3
 #define LED_OFF					*((volatile uint32_t *)((uint32_t)0x48000400 + 0x28U)) |= (1 << 3);		//GPIOB pin 3
 
-#define GPIOA					*((volatile uint32_t *) (uint32_t)(0x40021000 + 0x00000014U)) |= (uint32_t)(1 << 17);
-
 /* USER CODE END EM */
 
 /* Exported functions prototypes ---------------------------------------------*/
 void Error_Handler(void);
 
 /* USER CODE BEGIN EFP */
-
 
 /* USER CODE END EFP */
 

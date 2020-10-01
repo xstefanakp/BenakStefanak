@@ -19,7 +19,7 @@
   */
 /* USER CODE END Header */
 /* Define to prevent recursive inclusion -------------------------------------*/
-/*skuska
+
 #ifndef __MAIN_H
 #define __MAIN_H
 

@@ -44,7 +44,7 @@ extern "C" {
 
 //GPIOA peripheral base address
 #define	GPIOA_BASE_ADDR			(uint32_t)(0x48000000U)
-
+//peter stafanak
 //GPIOB peripheral base address
 #define	GPIOB_BASE_ADDR			(uint32_t)(0x48000400U)
 //MODER register

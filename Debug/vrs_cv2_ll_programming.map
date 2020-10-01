@@ -275,7 +275,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0xaf Src/stm32f3xx_it.o
  .debug_macro   0x0000000000000000      0x280 Src/stm32f3xx_it.o
  .debug_macro   0x0000000000000000      0x14f Src/stm32f3xx_it.o
- .debug_macro   0x0000000000000000       0x58 Src/stm32f3xx_it.o
+ .debug_macro   0x0000000000000000       0x5e Src/stm32f3xx_it.o
  .group         0x0000000000000000        0xc Src/syscalls.o
  .group         0x0000000000000000        0xc Src/syscalls.o
  .group         0x0000000000000000        0xc Src/syscalls.o
@@ -876,16 +876,16 @@ OUTPUT(vrs_cv2_ll_programming.elf elf32-littlearm)
  .debug_ranges  0x0000000000000068       0x18 Src/system_stm32f3xx.o
  .debug_ranges  0x0000000000000080       0x20 Startup/startup_stm32f303k8tx.o
 
-.debug_macro    0x0000000000000000      0x944
+.debug_macro    0x0000000000000000      0x94a
  .debug_macro   0x0000000000000000      0x130 Src/main.o
  .debug_macro   0x0000000000000130       0xe5 Src/main.o
  .debug_macro   0x0000000000000215       0xca Src/main.o
  .debug_macro   0x00000000000002df       0x28 Src/main.o
  .debug_macro   0x0000000000000307      0x280 Src/main.o
  .debug_macro   0x0000000000000587      0x14f Src/main.o
- .debug_macro   0x00000000000006d6       0x58 Src/main.o
- .debug_macro   0x000000000000072e      0x13a Src/stm32f3xx_it.o
- .debug_macro   0x0000000000000868       0xdc Src/system_stm32f3xx.o
+ .debug_macro   0x00000000000006d6       0x5e Src/main.o
+ .debug_macro   0x0000000000000734      0x13a Src/stm32f3xx_it.o
+ .debug_macro   0x000000000000086e       0xdc Src/system_stm32f3xx.o
 
 .debug_line     0x0000000000000000     0x10b4
  .debug_line    0x0000000000000000      0x5a7 Src/main.o
@@ -893,14 +893,14 @@ OUTPUT(vrs_cv2_ll_programming.elf elf32-littlearm)
  .debug_line    0x0000000000000ba9      0x48a Src/system_stm32f3xx.o
  .debug_line    0x0000000000001033       0x81 Startup/startup_stm32f303k8tx.o
 
-.debug_str      0x0000000000000000    0x69cd4
- .debug_str     0x0000000000000000    0x69a90 Src/main.o
-                                      0x69c0d (size before relaxing)
- .debug_str     0x0000000000069a90       0xb8 Src/stm32f3xx_it.o
-                                      0x69c90 (size before relaxing)
- .debug_str     0x0000000000069b48      0x15b Src/system_stm32f3xx.o
+.debug_str      0x0000000000000000    0x69dab
+ .debug_str     0x0000000000000000    0x69b34 Src/main.o
+                                      0x69cb1 (size before relaxing)
+ .debug_str     0x0000000000069b34       0xb8 Src/stm32f3xx_it.o
+                                      0x69d34 (size before relaxing)
+ .debug_str     0x0000000000069bec      0x18e Src/system_stm32f3xx.o
                                       0x63437 (size before relaxing)
- .debug_str     0x0000000000069ca3       0x31 Startup/startup_stm32f303k8tx.o
+ .debug_str     0x0000000000069d7a       0x31 Startup/startup_stm32f303k8tx.o
                                          0x64 (size before relaxing)
 
 .comment        0x0000000000000000       0x7b

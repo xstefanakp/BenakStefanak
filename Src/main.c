@@ -30,8 +30,8 @@ int main(void)
    * Write to bits, that are meant for change.
    */
 
-  /*Enables clock for GPIO port B*/
-  *((volatile uint32_t *) (uint32_t)(0x40021000 + 0x00000014U)) |= (uint32_t)(1 << 18);
+  /*Enables clock for GPIO port A*/
+  GPIOA;
 
   /*GPIOB pin 3 and 6 setup*/
   /*GPIO MODER register*/

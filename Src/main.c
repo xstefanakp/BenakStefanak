@@ -43,11 +43,11 @@ int main(void)
     *((volatile uint32_t *)((uint32_t)0x48000000)) |= (uint32_t)(1 << 8);
 
     /*GPIO OTYPER register*/
-    *((volatile uint32_t *)((uint32_t)(0x48000400 + 0x04U))) &= ~(1 << 3);
+    *((volatile uint32_t *)((uint32_t)(0x48000000 + 0x04U))) &= ~(1 << 4);
 
     /*GPIO OSPEEDR register*/
     //Set Low speed for GPIOB pin 3
-    *((volatile uint32_t *)((uint32_t)(0x48000400 + 0x08U))) &= ~(0x3 << 6);
+    *((volatile uint32_t *)((uint32_t)(0x48000000 + 0x08U))) &= ~(0x3 << 8);
 
     /*GPIO PUPDR register, reset*/
     //Set pull up for GPIOB pin 6 (input)

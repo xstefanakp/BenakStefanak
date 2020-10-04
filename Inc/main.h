@@ -44,25 +44,25 @@ extern "C" {
 
 //GPIOA peripheral base address
 #define	GPIOA_BASE_ADDR			(uint32_t)(0x48000000U)
-//peter stafanak
+
 //GPIOB peripheral base address
 #define	GPIOB_BASE_ADDR			(uint32_t)(0x48000400U)
 //MODER register
-#define	GPIOB_MODER_REG			*(uint32_t *)(GPIOB_BASE_ADDR + 0x00U)
+#define	GPIOA_MODER_REG			*(uint32_t *)(GPIOA_BASE_ADDR + 0x00U)
 //OTYPER register
-#define	GPIOB_OTYPER_REG		*(uint32_t *)(GPIOB_BASE_ADDR + 0x04U)
+#define	GPIOA_OTYPER_REG		*(uint32_t *)(GPIOA_BASE_ADDR + 0x04U)
 //OSPEEDER register
-#define GPIOB_OSPEEDER_REG		*(uint32_t *)(GPIOB_BASE_ADDR + 0x08U)
+#define GPIOA_OSPEEDER_REG		*(uint32_t *)(GPIOA_BASE_ADDR + 0x08U)
 //PUPDR register
-#define GPIOB_PUPDR_REG			*(uint32_t *)(GPIOB_BASE_ADDR + 0x0CU)
+#define GPIOA_PUPDR_REG			*(uint32_t *)(GPIOA_BASE_ADDR + 0x0CU)
 //IDR register
-#define GPIOB_IDR_REG			*(uint32_t *)(GPIOB_BASE_ADDR + 0x10U)
+#define GPIOA_IDR_REG			*(uint32_t *)(GPIOA_BASE_ADDR + 0x10U)
 //ODR register
-#define GPIOB_ODR_REG			*(uint32_t *)(GPIOB_BASE_ADDR + 0x14U)
+#define GPIOA_ODR_REG			*(uint32_t *)(GPIOA_BASE_ADDR + 0x14U)
 //BSRR register
-#define GPIOB_BSRR_REG			*(uint32_t *)(GPIOB_BASE_ADDR + 0x18U)
+#define GPIOA_BSRR_REG			*(uint32_t *)(GPIOA_BASE_ADDR + 0x18U)
 //BRR register
-#define GPIOB_BRR_REG			*(uint32_t *)(GPIOB_BASE_ADDR + 0x28U)
+#define GPIOA_BRR_REG			*(uint32_t *)(GPIOA_BASE_ADDR + 0x28U)
 
 //RCC base address
 #define	RCC_BASE_ADDR			(uint32_t)(0x40021000U)
